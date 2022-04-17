@@ -30,12 +30,13 @@ html, body {
     color: #000;
 }
 .wrapper {
+    max-width: 1280px;
+    margin: 0px auto;
     min-height: 100%;
     overflow: hidden;
 }
 ._container {
-    max-width: 1280px;
-    margin: 0px auto;
+
     background-image: url(/SHELTER/assets/images/start-bkg.png);
     background-repeat: no-repeat;
 }

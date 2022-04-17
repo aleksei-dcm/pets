@@ -35,13 +35,18 @@ html, body {
 }
 
 .wrapper {
+  max-width: 1280px;
+  margin: 0px auto;
   min-height: 100%;
   overflow: hidden;
 }
 
 ._container {
-  max-width: 1280px;
-  margin: 0px auto;
+  background-image: url(/SHELTER/assets/images/start-bkg.png);
+  background-repeat: no-repeat;
+}
+
+.start {
   background-image: url(/SHELTER/assets/images/start-bkg.png);
   background-repeat: no-repeat;
 }
@@ -56,19 +61,20 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px 40px 60px 40px;
+  padding: 80px 40px 60px 40px;
   height: 60px;
-  background-color: rgba(0, 255, 255, 0.192);
 }
 
 .header__logo {
+  position: relative;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+  height: 60px;
 }
 
 .header__logo.title {
-  position: relative;
+  position: absolute;
   width: 184px;
   height: 35px;
   color: #F1CDB3;
@@ -80,7 +86,7 @@ html, body {
 }
 
 .header__logo.subtitle {
-  position: relative;
+  position: absolute;
   color: #FFFFFF;
   font-size: 86%;
   line-height: 107%;
@@ -88,6 +94,7 @@ html, body {
   width: 179px;
   height: 15px;
   left: 4px;
+  bottom: 0;
 }
 
 .menu {
@@ -95,7 +102,6 @@ html, body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: rgba(255, 192, 203, 0.301);
 }
 
 .menu__list {
@@ -108,8 +114,11 @@ html, body {
   width: 443px;
 }
 
+.menu__list__item {
+  background-color: aqua;
+}
+
 .menu__link {
-  background-color: rgba(255, 228, 196, 0.274);
   position: relative;
   left: 0;
   min-width: auto;
@@ -130,8 +139,8 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 40px;
-  height: 720px;
+  padding: 30px 40px;
+  height: 758px;
 }
 
 .page__content {
@@ -139,16 +148,24 @@ html, body {
   width: 460px;
   height: 322px;
   top: 163px;
-  background-color: rgba(0, 255, 255, 0.062);
 }
 
 .page__head {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 310px;
   height: 114px;
   left: calc(50% - 310px/2 - 75px);
   bottom: 208px;
-  background-color: rgba(137, 43, 226, 0.233);
+  font-family: 'Georgia';
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
 }
 
 .page__subhead {
@@ -157,31 +174,76 @@ html, body {
   height: 72px;
   left: calc(50% - 460px/2);
   bottom: 94px;
-  background-color: rgba(0, 0, 255, 0.171);
+  line-height: 160%;
+  font-family: 'Arial';
+  font-size: 15px;
+  color: #CDCDCD;
 }
 
 .page__button {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
   width: 207px;
   height: 52px;
-  left: calc(50% - 207px/2 - 126.5px);
-  bottom: 0px;
   border-radius: 100px;
+  text-align: center;
   color: black;
   background-color: bisque;
+  bottom: 0px;
 }
 
-.page__buttonbtn {
-  background-color: aquamarine;
+.page .btn {
+  letter-spacing: 0.06em;
+  left: 21.74%;
+  right: 21.74%;
+  top: 28.85%;
+  bottom: 28.85%;
+  margin: 10px 0px;
+  font-family: 'Georgia';
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
 }
 
 .page__puppy {
   background-image: url(/SHELTER/assets/images/puppy.png);
-  background-color: rgba(127, 255, 212, 0.123);
   width: 698px;
   height: 728px;
   left: calc(50% - 698px/2 + 251px);
-  margin-top: 60px;
   bottom: 0;
+}
+
+.about {
+  background-color: aquamarine;
+  height: 588px;
+}
+
+.pets {
+  background-color: #5da3ff;
+  height: 877px;
+}
+
+.help {
+  background-color: #5dffc1;
+  height: 611px;
+}
+
+.donation {
+  background-color: #e7ff5d;
+  height: 462px;
+}
+
+.footer {
+  background-color: #83ff5d;
+  height: 350px;
 }
 /*# sourceMappingURL=style.css.map */
