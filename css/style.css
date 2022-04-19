@@ -47,7 +47,7 @@ html, body {
 }
 
 .start {
-  background-image: url(assets/images/start-bkg.png);
+  background-image: url(../assets/images/start-bkg.png);
   background-repeat: no-repeat;
 }
 
