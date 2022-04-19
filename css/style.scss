@@ -3,7 +3,7 @@
 
 //-----------*HEADER*-----------
 .start {
-    background-image: url(./assets/images/start-bkg.png);
+    background-image: url(https://github.com/aleksei-dcm/pets/assets/images/start-bkg.png);
     background-repeat: no-repeat;
   }
 .header {
@@ -130,7 +130,7 @@
     color: $darck-3xl;
 }
         &__puppy {
-        background-image: url(../assets/images/puppy.png);
+        background-image: url(https://github.com/aleksei-dcm/pets/assets/images/puppy.png);
         width: 698px;
         height: 728px;
         left: calc(50% - 698px/2 + 251px);
