@@ -42,12 +42,12 @@ html, body {
 }
 
 ._container {
-  background-image: url(/SHELTER/assets/images/start-bkg.png);
+  background-image: url(assets/images/start-bkg.png);
   background-repeat: no-repeat;
 }
 
 .start {
-  background-image: url(/SHELTER/assets/images/start-bkg.png);
+  background-image: url(assets/images/start-bkg.png);
   background-repeat: no-repeat;
 }
 
@@ -215,7 +215,7 @@ html, body {
 }
 
 .page__puppy {
-  background-image: url(/SHELTER/assets/images/puppy.png);
+  background-image: url(assets/images/puppy.png);
   width: 698px;
   height: 728px;
   left: calc(50% - 698px/2 + 251px);
