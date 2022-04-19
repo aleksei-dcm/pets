@@ -1,11 +1,22 @@
 @import 'colors';
 @import 'null';
 
-//-----------*HEADER*-----------
 .start {
     background-image: url(/SHELTER/assets/images/start-bkg.png);
     background-repeat: no-repeat;
   }
+h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color:  $darck-l;
+}
+
+//-----------*HEADER*-----------
+
 .header {
 &__container {
     display: flex;
@@ -112,25 +123,25 @@
         width: 207px;
         height: 52px;
         border-radius: 100px;
-        text-align:center;
-        color: black;
         background-color: bisque;
         bottom: 0px;
+        &__btn {
+            letter-spacing: 0.06em;
+            left: 21.74%;
+            right: 21.74%;
+            top: 28.85%;
+            bottom: 28.85%;
+            margin: 10px 0px;
+            font-family: 'Georgia', Regular;
+            text-align: center;
+            font-size: 17px;
+            line-height: 130%;
+            color: $darck-3xl;
         }
-.btn {
-    letter-spacing: 0.06em;
-    left: 21.74%;
-    right: 21.74%;
-    top: 28.85%;
-    bottom: 28.85%;
-    margin: 10px 0px;
-    font-family: 'Georgia';
-    font-size: 17px;
-    line-height: 130%;
-    color: $darck-3xl;
-}
+    }
         &__puppy {
         background-image: url(/SHELTER/assets/images/puppy.png);
+        background-repeat: no-repeat;
         width: 698px;
         height: 728px;
         left: calc(50% - 698px/2 + 251px);
@@ -141,21 +152,90 @@
 //-----------*ABOUT*-----------
 
 .about {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     height: 588px;
+    padding: 80px 40px 100px 40px;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        margin: auto 115px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        top: 14px;
+        height: 380px;
+        width: 430px;
+    }
+    &__heading {
+        width: 370px;
+    }
+    &__subheading {
+        font-family: 'Arial';
+        line-height: 160%;
+        color: $darck-xl;
+    }
 }
-
-
-
-
 
 //-----------*PETS*-----------
 
 .pets {
     background-color: rgb(93, 163, 255);
-    height: 877px;  
-}
-//-----------*HELP*-----------
+    height: 877px;
+    padding: 80px 40px 100px 40px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(250, 93, 255, 0.575);
+    }
+    &__heading {
+        text-align: center;
+        width: 400px;
+        height: 90px;
+        background-color: rgba(112, 255, 93, 0.575);
+        &prev {
+            display: block;
+            height: 52px;
+            width: 52px;
+            border: 2px solid $primary;
+            border-radius: 100px;  
+            }
+        }
+        &next {
+            height: 52px;
+            width: 52px;
+            border: 2px solid $primary;
+            border-radius: 100px;
+            transform: rotate(-180deg);
+        }   
+    &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 261px;
+        height: 52px;
+        border-radius: 100px;
+        background-color: bisque;
+            &__btn {
+            margin: 10px 0px;
+            font-family: 'Georgia', Regular;
+            font-size: 17px;
+            align-self: center;
+            letter-spacing: 0.06em;
+            line-height: 130%;
+            color: $darck-3xl;
+            }
+        }
+}  
+
+ //-----------*HELP*-----------
 
 .help {
     background-color: rgb(93, 255, 193);
