@@ -1,19 +1,6 @@
 @import 'colors';
 @import 'null';
 
-.start {
-    background-image: url(assets/images/start-bkg.png);
-    background-repeat: no-repeat;
-  }
-h3 {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color:  $darck-l;
-}
 
 //-----------*HEADER*-----------
 
@@ -76,7 +63,20 @@ h3 {
     }    
 }
 
-//-----------*PAGE*-----------
+//-----------*SRAT PAGE*-----------
+.start {
+    background-image: url(../assets/images/start-bkg.png);
+    background-repeat: no-repeat;
+  }
+h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color:  $darck-l;
+}
 
 .page {
     position: relative;
@@ -187,32 +187,17 @@ h3 {
     padding: 80px 40px 100px 40px;
     &__container {
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        position: relative;
         height: 100%;
         width: 100%;
-        background-color: rgba(250, 93, 255, 0.575);
     }
     &__heading {
         text-align: center;
         width: 400px;
         height: 90px;
-        background-color: rgba(112, 255, 93, 0.575);
-        &prev {
-            display: block;
-            height: 52px;
-            width: 52px;
-            border: 2px solid $primary;
-            border-radius: 100px;  
-            }
-        }
-        &next {
-            height: 52px;
-            width: 52px;
-            border: 2px solid $primary;
-            border-radius: 100px;
-            transform: rotate(-180deg);
         }   
     &__button {
         display: flex;
@@ -233,7 +218,61 @@ h3 {
             color: $darck-3xl;
             }
         }
-}  
+}
+
+//-----------*SLIDER*-----------  
+
+.slider-wrap {
+    max-width: 82.5%;
+    height: 435px;
+    margin: 60px 0px;
+    overflow: hidden;
+.animate{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1650px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    }
+.slide {
+    min-width: 330px;
+    height: 435px;
+    float: left;
+    transform: translate(-330px);
+    z-index: 29;
+    }
+.controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    }
+.prev {
+        width: 52px;
+        height: 52px;
+        padding: 15px 0px;
+        border-radius: 100px;
+        border: 2px solid $primary;
+        text-align: center;
+        cursor: pointer;
+    }
+.next {
+        width: 52px;
+        height: 52px;
+        padding: 15px 0px;
+        border-radius: 100px;
+        border: 2px solid $primary;
+        text-align: center;
+        transform: rotate(-180deg);
+        cursor: pointer;
+    }
+
+}
+
 
  //-----------*HELP*-----------
 
