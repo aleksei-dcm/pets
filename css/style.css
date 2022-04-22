@@ -41,6 +41,21 @@ html, body {
   overflow: hidden;
 }
 
+.start {
+  background-image: url(../assets/images/start-bkg.png);
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-family: 'Georgia', Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,23 +132,8 @@ html, body {
 
 .menu__link:hover {
   color: #FFFFFF;
-  -webkit-text-decoration: #fff;
-          text-decoration: #fff;
-}
-
-.start {
-  background-image: url(../assets/images/start-bkg.png);
-  background-repeat: no-repeat;
-}
-
-h3 {
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #545454;
+  -webkit-text-decoration: #FFFFFF;
+          text-decoration: #FFFFFF;
 }
 
 .page {
@@ -270,7 +270,7 @@ h3 {
 }
 
 .pets {
-  background-color: #5da3ff;
+  background-color: #F6F6F6;
   height: 877px;
   padding: 80px 40px 100px 40px;
 }
@@ -331,7 +331,7 @@ h3 {
 }
 
 .slider-wrap {
-  max-width: 82.5%;
+  max-width: 86.9%;
   height: 435px;
   margin: 60px 0px;
   overflow: hidden;
@@ -346,7 +346,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 1650px;
+  width: 1738px;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -356,11 +356,11 @@ h3 {
 }
 
 .slider-wrap .slide {
-  min-width: 330px;
+  min-width: 347px;
   height: 435px;
   float: left;
-  -webkit-transform: translate(-330px);
-          transform: translate(-330px);
+  -webkit-transform: translate(-347px);
+          transform: translate(-347px);
   z-index: 29;
 }
 
@@ -398,6 +398,50 @@ h3 {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   cursor: pointer;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  margin: 0 11%;
+  background-color: #FAFAFA;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 112px;
+}
+
+.card__btn {
+  position: absolute;
+  margin: auto;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 187px;
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 45px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.card__text {
+  font-family: 'Georgia', Regular;
+  width: 98px;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  color: #292929;
 }
 
 .help {
